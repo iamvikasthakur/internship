@@ -1,8 +1,9 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Jumbotron
+  CardTitle, CardSubtitle, Button, Jumbotron, Form
 } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 const Home = (props) => {
     return(
@@ -22,7 +23,7 @@ const Home = (props) => {
                         <CardTitle>Delhi</CardTitle>
                         <CardSubtitle>Title</CardSubtitle>
                         <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                        <Button href='/delhi'>Know More</Button>
+                        <Link to='/delhi'>Know More</Link>
                         </CardBody>
                     </Card>
                     </div>
@@ -33,7 +34,7 @@ const Home = (props) => {
                         <CardTitle>Mumbai</CardTitle>
                         <CardSubtitle>Title</CardSubtitle>
                         <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                        <Button href='/mumbai'>Know More</Button>
+                        <Link to='/mumbai'>Know More</Link>
                         </CardBody>
                     </Card>
                     </div><div className='col-sm-12 col-md-3'>
@@ -43,7 +44,7 @@ const Home = (props) => {
                         <CardTitle>Kolkata</CardTitle>
                         <CardSubtitle>Title</CardSubtitle>
                         <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                        <Button href='/kolkata'>Know More</Button>
+                        <Link to='/kolkata'>Know More</Link>
                         </CardBody>
                     </Card>
                     </div><div className='col-sm-12 col-md-3'>
@@ -53,7 +54,7 @@ const Home = (props) => {
                         <CardTitle>Banglore</CardTitle>
                         <CardSubtitle>Title</CardSubtitle>
                         <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                        <Button href='/banglore'>Know More</Button>
+                        <Link to='/banglore'>Know More</Link>
                         </CardBody>
                     </Card>
                     </div>

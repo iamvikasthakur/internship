@@ -16,7 +16,7 @@ const Home = (props) => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-sm-12 col-md-3'>
-                    <Card>
+                    <Card key='1'>
                         <CardImg top height="120px" src="/images/d1.jpg" alt="delhi" />
                         <CardBody>
                         <CardTitle>Delhi</CardTitle>
@@ -27,7 +27,7 @@ const Home = (props) => {
                     </Card>
                     </div>
                     <div className='col-sm-12 col-md-3'>
-                    <Card>
+                    <Card key='2'>
                         <CardImg top height="120px" src="/images/m1.jpg" alt="mumbai" />
                         <CardBody>
                         <CardTitle>Mumbai</CardTitle>
@@ -37,7 +37,7 @@ const Home = (props) => {
                         </CardBody>
                     </Card>
                     </div><div className='col-sm-12 col-md-3'>
-                    <Card>
+                    <Card key='3'>
                         <CardImg top height="120px" src="/images/k1.jpg" alt="kolkata" />
                         <CardBody>
                         <CardTitle>Kolkata</CardTitle>
@@ -47,7 +47,7 @@ const Home = (props) => {
                         </CardBody>
                     </Card>
                     </div><div className='col-sm-12 col-md-3'>
-                    <Card>
+                    <Card key='4'>
                         <CardImg top height="120px" src="/images/b1.jpg" alt="banglore" />
                         <CardBody>
                         <CardTitle>Banglore</CardTitle>

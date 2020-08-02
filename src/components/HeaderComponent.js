@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className='main' color="light" light expand="md">
         <NavbarBrand href="/">T&T</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

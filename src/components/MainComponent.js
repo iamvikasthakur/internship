@@ -6,6 +6,7 @@ import Mumbai from './MumbaiComponent';
 import Kolkata from './KolkataComponent';
 import Banglore from './BangloreComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 class Main extends Component{
     constructor(props){
@@ -42,14 +43,18 @@ class Main extends Component{
         return(
             <div>
                 <Header />
-                <Switch location={this.props.location}>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/delhi' component={delhi} />
-                    <Route exact path='/mumbai' component={mumbai}/>
-                    <Route exact path='/kolkata' component={kolkata}/>
-                    <Route exact path='/banglore' component={banglore}/>
-                    <Redirect to='/'/>
-                </Switch>
+                <TransitionGroup>
+                    <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+                        <Switch location={this.props.location}>
+                            <Route exact path='/' component={Home} />
+                            <Route exact path='/delhi' component={delhi} />
+                            <Route exact path='/mumbai' component={mumbai}/>
+                            <Route exact path='/kolkata' component={kolkata}/>
+                            <Route exact path='/banglore' component={banglore}/>
+                            <Redirect to='/'/>
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
         );
     }

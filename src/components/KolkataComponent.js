@@ -5,7 +5,7 @@ const Kolkata = (props) => {
     const place = props.index.map((i) => {
         return(
           <div className='col-sm-12 col-md-3'>
-            <Card>
+            <Card key={i}>
                 <CardImg top height="120px" src={`images/k${i}.jpg`} alt="Card image cap" />
                 <CardBody>
                     <CardTitle>Title</CardTitle>
